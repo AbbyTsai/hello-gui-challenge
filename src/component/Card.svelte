@@ -1,26 +1,44 @@
 <script>
-
 </script>
-
 
 <div class='card'>
 <slot>
-
 </slot>
-
 </div>
 
 <style>
+@media screen and (min-width:480px){
 .card{
-    height: 200px;
-	width: 400px;
-    border-image: repeating-linear-gradient(90deg, black 0px 10px, red 10px 20px ) 1 5%;
+	height: 150px;
+    width: 400px;
+    border-image: repeating-linear-gradient(90deg, black 0px 10px, red 10px 20px ) 1 25%;
     border-style: solid;
-    border-top-width: 15px;
-    border-bottom-width: 15px;
+    border-top-width: 2em;
+    border-bottom-width: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+}
+
+@media screen and (max-width:480px){
+    .card{
+        height: 150px;
+        grid: [story] 1fr / [story] 1fr;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    justify-items: center;
+    border-style: solid;
+    border-image: repeating-linear-gradient(90deg, black 0px 10px, red 10px 20px ) 1 1%;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-width:2em;
+    border-bottom-width:2em;
+    border-left-width:5px;
+    border-right-width:5px;
+    }
 }
 </style>

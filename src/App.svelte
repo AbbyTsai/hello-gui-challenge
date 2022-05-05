@@ -1,6 +1,6 @@
 <script>
-	import Card from './Component/Card.svelte';
-	import Avatar from './Component/Avatar.svelte';
+	import Card from './Card.svelte';
+	import Avatar from './Avatar.svelte';
 	export let name;
 	let n = name;
 	let challenges=[
@@ -125,7 +125,7 @@ Seriously, what's going on.
 		<Avatar width={30} height={40} />
 		</div>
 	<button><a href="#dialog{i}">open</a></button>
-	<div class="dialog2022" id="dialog{i}">
+	<div class="dialog" id="dialog{i}">
 	<div class='dialogContent'>
 		<div><h1>{challenge.name}</h1></div>
 		<div>{challenge.date}</div>
@@ -157,7 +157,7 @@ Seriously, what's going on.
 <Avatar width={30} height={40} />
 </div>
 <button><a href="#dialog{i}">open</a></button>
-<div class="dialog2022" id="dialog{i}">
+<div class="dialog" id="dialog{i}">
 <div class='dialogContent'>
 <div><h1>{challenge.name}</h1></div>
 <div>{challenge.date}</div>
@@ -189,7 +189,7 @@ Seriously, what's going on.
 <Avatar width={30} height={40} />
 </div>
 <button><a href="#dialog{i}">open</a></button>
-<div class="dialog2022" id="dialog{i}">
+<div class="dialog" id="dialog{i}">
 <div class='dialogContent'>
 <div><h1>{challenge.name}</h1></div>
 <div>{challenge.date}</div>
@@ -405,7 +405,7 @@ button:hover, .ref:hover {
 	width:10em;
 }
 
-.dialog, .dialog2022{
+.dialog{
 	height:100vh;
 	width:90vw;
 	background:lightgray;
@@ -416,7 +416,7 @@ button:hover, .ref:hover {
 	top:0;
 }
 
-.dialog:target, .dialog:focus, .dialog2022:target, .dialog2022:focus{
+.dialog:target, .dialog:focus{
 	display:block;
 }
 
@@ -614,9 +614,7 @@ button, .description {
 	display: grid;
 	grid-auto-flow: column;
 	overflow-x: auto;
-	background:var(--color);
 	margin-left:3em;
-	margin-top:0em;
 	justify-content: start;
 }
 .dialogContent{

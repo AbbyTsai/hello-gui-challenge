@@ -22,6 +22,7 @@
 		{index:16, name: 'svg-favicon',date:'Feb 9,2022', description:'building-an-adaptive-favicon',url:'https://www.youtube.com/watch?v=4pJahmCR8kQ' },
 		{index:17, name: 'loading-bar',date:'Mar 16, 2022',description:'building-a-loading-bar-component' ,url:'https://www.youtube.com/watch?v=TD1QxlGgIPk'},
 		{index:18, name: 'dialog',date:'Apr 13, 2022', description:'building-a-dialog-component' ,url:'https://www.youtube.com/watch?v=GDzzIlRhEzM'},
+		{index:19, name: 'buttons',date:'May 18, 2022', description:'building-a-button-component' ,url:'https://www.youtube.com/watch?v=aJNq-b1zlog&t'}
 	];
 let array1=[
 		{ id: '@AbbyPTsai', word: 'inspired!', url:'https://twitter.com/AbbyPTsai/status/1417046553529782272'},

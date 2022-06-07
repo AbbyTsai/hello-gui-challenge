@@ -535,7 +535,7 @@ button, .description {
 	animation:breath 1s  9s;
 }
 
-#textSplit span:nth-child(4){
+#textSplit span:nth-child(5){
 	animation:breath 1s 9.5s;
 }
 
